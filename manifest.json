@@ -1,0 +1,28 @@
+{
+  "dxt_version": "0.1",
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "weather mcp server",
+  "author": {
+    "name": "kshitij",
+    "email": "kshitij.betwal@gmail.com"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "server/main.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/server/main.py"
+      ],
+      "env": {
+        "PYTHONPATH": "server/lib"
+      }
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theNeuralHorizon/mcp-weather"
+  }
+}
